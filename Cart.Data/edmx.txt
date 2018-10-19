@@ -1,0 +1,1 @@
+﻿Scaffold-DbContext "Server=DESKTOP-SUIO9S2;Database=ShopingCart;User ID=sa;Password=pass#word1;Trusted_Connection=False;" Microsoft.EntityFrameworkCore.SqlServer -contextDir CartContext -context ShoppingContext -schema dbo -OutputDir CartModels -Force

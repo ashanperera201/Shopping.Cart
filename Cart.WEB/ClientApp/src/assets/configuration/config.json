@@ -1,0 +1,13 @@
+{
+  "Shared": {
+    "Configuration": {
+      "ApiUrl": "api/",
+      "Controller": {
+        "Product": "product/"
+      },
+      "Method": {
+        "FindRoles": "FindRoles"
+      }
+    }
+  }
+}

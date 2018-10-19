@@ -1,0 +1,66 @@
+.top-info ul li {
+  list-style: none;
+  display: inline-block;
+  color: #999;
+  letter-spacing: 2px;
+}
+
+.top-info h6 {
+  color: #9c9b9b;
+  letter-spacing: 3px;
+}
+
+.top-info i {
+  color: #ff4e00;
+}
+
+li.number-phone {
+  color: #3e3a3a;
+}
+
+button.top_googles_cart {
+  text-align: center;
+  background: none;
+  letter-spacing: 2px;
+  color: #454546;
+  cursor: pointer;
+  border: 1px solid #dde2e6;
+  padding: 0.5em 1em;
+}
+
+ul.cart-inner-info li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 2em;
+}
+
+.button-log a {
+  color: #333;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.btn-open:after {
+  color: #333;
+  transition-property: all .2s linear 0s;
+  -moz-transition: all .2s linear 0s;
+  -webkit-transition: all .2s linear 0s;
+  -o-transition: all .2s linear 0s;
+}
+
+.btn-open:hover:after {
+  color: #34B484;
+}
+
+label.top-log {
+  width: 45%;
+  height: 1px;
+  background: #d7d7da;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.carousel-item {
+  height: 39em;
+  background-color: #777;
+}
