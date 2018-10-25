@@ -1,10 +1,9 @@
 import { Routes, RouterModule } from './shared/utilities/angular'
 
 const cartMainModuleRouting: Routes = [
-  { path: '', redirectTo: 'app-site', pathMatch: 'full' },
-  { path: 'app-site', loadChildren: './site/site.module#SiteModule' }
-  //{ path: '', redirectTo: '/auth/login', pathMatch: 'full' },
-  //{ path: 'auth', loadChildren: './login/login.module#LoginModule' },
+  { path: '', redirectTo: 'auth', pathMatch: 'full' },
+  { path: 'app-site', loadChildren: './site/site.module#SiteModule' },  
+  { path: 'auth', loadChildren: './auth/auth.module#AuthenticationModule' },
   //{ path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' }
 ]
 
