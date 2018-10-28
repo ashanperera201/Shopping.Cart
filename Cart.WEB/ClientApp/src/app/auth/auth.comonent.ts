@@ -2,7 +2,7 @@ import { Component, OnInit } from '../shared/utilities/angular'
 
 @Component({
   templateUrl: './auth.comonent.html',
-  styleUrls: ['./auth.comonent.scss']
+  styleUrls: ['./auth.comonent.css']
 })
 
 export class AuthComponent implements OnInit {

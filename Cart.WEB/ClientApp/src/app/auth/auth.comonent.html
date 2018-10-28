@@ -1,62 +1,61 @@
-<div class="auth">
-  <div class="header">
-    <button class=" btn  btn-just-icon btn-round" type="submit" [routerLink]="'/'">
-      <i class="material-icons">home</i>
-    </button>
-  </div>
-  <div class="w-80">
-    <div class="auth-text" [ngClass]="toggleFormClass">
-      <!-- sign up text div -->
-      <div class="auth-login-text">
-        <h2>Don't have an account?</h2>
-        <p>Banjo tote bag bicycle rights, High Life sartorial cray craft beer whatever street art fap.</p>
-        <button class="btn btn-outline-light  px-5" (click)="showSignUp()">Sign up</button>
-      </div>
-      <!-- log in text div -->
-      <div class="auth-signup-text">
-        <h2>Have an account?</h2>
-        <p>Banjo tote bag bicycle rights, High Life sartorial cray craft beer whatever street art fap.</p>
-        <button class="btn btn-outline-light  px-5" (click)="showLogin()">Login</button>
-      </div>
-    </div>
-    <div class="card shadow auth-forms">
-      <!-- login form -->
-      <div class="auth-login">
-        <div class="wrapper">
-          <h2 class="mb-4 text-primary">Login</h2>
-          <form>
-            <div class="form-group">
-              <input type="email" class="form-control" placeholder="Email" required autofocus />
+<div class="container-background">
+  <div class="my-login-page">
+    <section class="h-100">
+      <div class="container h-100">
+        <div class="row justify-content-md-center h-100">
+          <div class="card-wrapper">
+            <div class="brand">
+              <img src="assets/images/logo.jpg" alt="logo">
             </div>
-            <div class="form-group">
-              <input type="password" class="form-control" placeholder="Password" required />
+            <div class="card fat">
+              <div class="card-body">
+                <h4 class="card-title">Login</h4>
+                <form method="POST" class="my-login-validation" novalidate="">
+                  <div class="form-group">
+                    <label for="email">E-Mail Address</label>
+                    <input id="email" type="email" class="form-control" name="email" value="" required autofocus>
+                    <div class="invalid-feedback">
+                      Email is invalid
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="password">
+                      Password
+                      <a href="forgot.html" class="float-right">
+                        Forgot Password?
+                      </a>
+                    </label>
+                    <input id="password" type="password" class="form-control" name="password" required data-eye>
+                    <div class="invalid-feedback">
+                      Password is required
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="custom-checkbox custom-control">
+                      <input type="checkbox" name="remember" id="remember" class="custom-control-input">
+                      <label for="remember" class="custom-control-label">Remeber Me</label>
+                    </div>
+                  </div>
+
+                  <div class="form-group m-0">
+                    <button type="submit" class="btn btn-primary btn-block">
+                      Login
+                    </button>
+                  </div>
+                  <div class="mt-4 text-center">
+                    Don't have an account? <a href="register.html">Create One</a>
+                  </div>
+                </form>
+              </div>
             </div>
-            <div class="form-group">
-              <button class="btn px-4 btn-primary" (click)="showLogin">Log In</button>
+            <div class="footer">
+              Copyright &copy; 2017 &mdash; Your Company
             </div>
-          </form>
+          </div>
         </div>
       </div>
-      <!-- sign up form -->
-      <div class="auth-signup" [ngClass]="bounceRight">
-        <div class="wrapper">
-          <h2 class="mb-4 text-primary">Sign Up</h2>
-          <form class="forms_form">
-            <div class="form-group">
-              <input type="text" placeholder="Full Name" class="form-control" required />
-            </div>
-            <div class="form-group">
-              <input type="email" placeholder="Email" class="form-control" required />
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control" required />
-            </div>
-            <div class="form-group">
-              <button (click)="showSignUp" class="btn btn-primary px-4">Sign Up</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
+    </section>
   </div>
 </div>

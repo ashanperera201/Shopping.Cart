@@ -457,14 +457,6 @@ a.animated-button.gibson-three:hover:after {
 .modal-header .close {
   float: right !important;
 }
-
-.form-control:focus {
-  border: 1px solid #ccc;
-  outline: 0;
-  box-shadow: none !important;
-}
-
-/*-- //registration --*/
 /*-- effect --*/
 
 .galsses-grid-left {
@@ -2515,21 +2507,4 @@ ul.links li a:hover {
     width: 100%;
     height: 60%;
   }
-}
-
-.form-control .no-border, input.no-border {
-  border: none !important;
-  box-shadow: none !important;
-  padding-left: 0 !important;
-  line-height: 0 !important;
-  background-image: linear-gradient(0deg,#000000 1px,white 0) !important;
-  &:focus {
-  border: none !important;
-  box-shadow: 0 0.4rem 0.2rem -0.2rem lighten(#3ebb8c,40%) !important;
-  background-image: linear-gradient(0deg,lighten(#3ebb8c,35%) 1px,#FFF 0) !important;
-  }
-}
-
-.form-control .rounded-border, input.rounded-border {
-  border-radius: 1.5rem !important;
 }
